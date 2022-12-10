@@ -9,6 +9,7 @@ import { RegisterComponent } from './register/register.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { ViewAllComponent } from './view-all/view-all.component';
 import { CardViewComponent } from './card-view/card-view.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CardViewComponent } from './card-view/card-view.component';
     RegisterComponent,
     AddProductComponent,
     ViewAllComponent,
-    CardViewComponent
+    CardViewComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
