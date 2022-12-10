@@ -15,5 +15,21 @@
             </div>
         </div>
     </div>
+
+    <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let j of searchProduct">
+        <div class="card">
+            <img height="300px" width="300px" src="{{j.image}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="text-dark"class="card-title">Product: {{j.productname}}</h5>
+              <p class="card-text">Category: {{j.category}}</p>
+              <p class="card-text">Description: {{j.description}}</p>
+              <p class="card-text">Price: {{j.price}}</p>
+              
+              
+              
+            </div>
+          </div>
+          
+    </div>
 </div>
 </div>
