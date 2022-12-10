@@ -1,3 +1,4 @@
+
 <div class="bg-danger p-2 text-dark bg-opacity-10">
 <div class="container">
     <div class="row">
@@ -8,14 +9,14 @@
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
                     <label for="" class="form-label">Username</label>
-                    <input type="text" class="form-control">
+                    <input name="username"[(ngModel)]="username"type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
                     <label for="" class="form-label">Password</label>
-                    <input type="password" name="" id="" class="form-control">
+                    <input name="password"[(ngModel)]="password"type="password" name="" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button class="btn btn-info">LOGIN</button>
+                    <button (click)="admin()" class="btn btn-info">LOGIN</button>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
                     <a  routerLink="/user">User Login</a>

@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div class="bg-success p-2 text-dark bg-opacity-25">
 <div class="container">
     <div class="row">
@@ -8,30 +9,30 @@
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Name</label>
-                    <input type="text" class="form-control">
+                    <input name="name"[(ngModel)]="name" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Address</label>
-                    <input type="text" class="form-control">
+                    <input name="address"[(ngModel)]="address" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Phone Number</label>
-                    <input type="text" class="form-control">
+                    <input name="phnno"[(ngModel)]="phnno" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Email ID</label>
-                    <input type="email" name="" id="" class="form-control">
+                    <input name="email"[(ngModel)]="email" type="email" name="" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Password</label>
-                    <input type="password" name="" id="" class="form-control">
+                    <input name="pass"[(ngModel)]="pass" type="password" name="" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Confirm Password</label>
-                    <input type="password" name="" id="" class="form-control">
+                    <input name="confpass"[(ngModel)]="confpass" type="password" name="" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button class="btn btn-danger">Register</button>
+                    <button (click)="register()"class="btn btn-danger" routerLink="/view">Register</button>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
                     <a  routerLink="/user">Click here for User Login</a>

@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -14,35 +15,14 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">Bike</th>
-                            <td>Vehicle</td>
-                            <td>fghjk</td>
-                            <td>130000</td>
-                            <td><img height="100px" height="100px"src="https://m.media-amazon.com/images/I/81XyIoZ8+HL._SL1500_.jpg"  alt="..."></td>
+                        <tr *ngFor="let i of data">
+                            <th scope="row">{{i.productname}}</th>
+                            <td>{{i.category}}</td>
+                            <td>{{i.description}}</td>
+                            <td>{{i.price}}</td>
+                            <td><img height="100px" height="100px"src="{{i.image}}"  alt="..."></td>
                           </tr>
-                      <tr>
-                        <th scope="row">Car</th>
-                        <td>Vehicle</td>
-                        <td>Otto</td>
-                        <td>850000</td>
-                        <td><img height="100px" height="100px"src="https://imgd-ct.aeplcdn.com/320x200/n/cw/ec/32597/altroz-exterior-right-front-three-quarter-79.jpeg?isig=0&q=75"  alt="..."></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Laptop</th>
-                        <td>Electronics</td>
-                        <td>Thornton</td>
-                        <td>90000</td>
-                        <td><img height="100px" height="100px"src="https://m.media-amazon.com/images/I/61Dw5Z8LzJL._SL1000_.jpg"  alt="..."></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">TV</th>
-                        <td >Electronics</td>
-                        <td >Larry the Bird</td>
-                        <td>55000</td>
-                        <td><img height="100px" height="100px"src="https://images.philips.com/is/image/PhilipsConsumer/58PUT6604_94-IMS-en_IN?$jpglarge$&wid=960"  alt="..."></td>
-                        
-                      </tr>
+                      
                     </tbody>
                 
               </table>
