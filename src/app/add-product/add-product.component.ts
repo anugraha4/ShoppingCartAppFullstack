@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-product.component.css']
 })
 export class AddProductComponent {
+  productname=""
+  category=""
+  description=""
+  price=""
+  image=""
 
+
+  readValues=()=>
+  {
+    let data:any=[{
+      "productname":this.productname,"category":this.category,"description":this.description,"price":this.price,"image":this.image
+
+    }
+  ]
+  console.log(data)
+  }
 }

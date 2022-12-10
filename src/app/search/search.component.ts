@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent {
+  productname=""
 
+  search=()=>
+  {
+    let ser:any=[{
+      "productname":this.productname
+    }]
+    console.log(ser)
+  }
 }

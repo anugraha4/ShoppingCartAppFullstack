@@ -8,14 +8,14 @@
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
                         <label for="" class="form-label">Email</label>
-                        <input type="email" name="" id="" class="form-control">
+                        <input name="email"[(ngModel)]="email" type="email" name="" id="" class="form-control">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
                         <label for="" class="form-label">Password</label>
-                        <input type="password" name="" id="" class="form-control">
+                        <input name="pass"[(ngModel)]="pass" type="password" name="" id="" class="form-control">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                        <button class="btn btn-info">LOGIN</button>
+                        <button (click)="user()"class="btn btn-info">LOGIN</button>
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
                         <a  routerLink="/register">Click here for user SignUp</a>
