@@ -8,6 +8,7 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { RegisterComponent } from './register/register.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { ViewAllComponent } from './view-all/view-all.component';
+import { CardViewComponent } from './card-view/card-view.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ViewAllComponent } from './view-all/view-all.component';
     UserLoginComponent,
     RegisterComponent,
     AddProductComponent,
-    ViewAllComponent
+    ViewAllComponent,
+    CardViewComponent
   ],
   imports: [
     BrowserModule,
