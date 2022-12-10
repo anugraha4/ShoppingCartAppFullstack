@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,7 +10,37 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { ViewAllComponent } from './view-all/view-all.component';
 import { CardViewComponent } from './card-view/card-view.component';
 import { SearchComponent } from './search/search.component';
-
+import { RouterModule, Routes } from '@angular/router';
+const myRoute:Routes=[
+ {
+  path:"",
+  component:AdminLoginComponent
+ },
+ {
+  path:"/user",
+  component:UserLoginComponent
+ },
+ {
+  path:"/register",
+  component:RegisterComponent
+ },
+ {
+  path:"add",
+  component:AddProductComponent
+ },
+ {
+  path:"search",
+  component:SearchComponent
+ },
+ {
+  path:"view",
+  component:ViewAllComponent
+ },
+ {
+  path:"card",
+  component:CardViewComponent
+ }
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +54,8 @@ import { SearchComponent } from './search/search.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
