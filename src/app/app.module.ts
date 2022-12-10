@@ -11,17 +11,18 @@ import { ViewAllComponent } from './view-all/view-all.component';
 import { CardViewComponent } from './card-view/card-view.component';
 import { SearchComponent } from './search/search.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 const myRoute:Routes=[
  {
   path:"",
   component:AdminLoginComponent
  },
  {
-  path:"/user",
+  path:"user",
   component:UserLoginComponent
  },
  {
-  path:"/register",
+  path:"register",
   component:RegisterComponent
  },
  {
@@ -50,7 +51,8 @@ const myRoute:Routes=[
     AddProductComponent,
     ViewAllComponent,
     CardViewComponent,
-    SearchComponent
+    SearchComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
